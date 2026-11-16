@@ -469,3 +469,9 @@ footer { background: #050505; border-top: 1px solid var(--border2); padding: 6re
 .proj-card--nmw .pc-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .proj-card--nmw .pc-tags-media { top: auto; bottom: 0.75rem; left: 0.75rem; }
 .proj-card--nmw .wip-badge { top: auto; bottom: 0.75rem; right: 0.75rem; }
+.proj-card--nmw .pc-media::after { content:""; position:absolute; inset:auto 0 0 0; height:35%; background:linear-gradient(to top, rgba(8,8,8,.85), transparent); pointer-events:none; }
+.proj-card--nmw .pc-tags-media, .proj-card--nmw .wip-badge { z-index: 2; }
+@media (max-width:600px){
+  .proj-card--nmw .wip-badge { top:.6rem; bottom:auto; right:.6rem; }
+  .proj-card--nmw .pc-tags-media { bottom:.6rem; left:.6rem; right:.6rem; }
+}
