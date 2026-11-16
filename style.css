@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════
    GUILHERME HONORATO — PORTFOLIO
    Direction: Editorial Dark · Ink & Amber
-   Fonts: Syne + Lora + JetBrains Mono
+   Fonts: Lora + JetBrains Mono
    ═══════════════════════════════════════════════ */
 
 :root {
@@ -22,7 +22,7 @@
   --radius-lg: 24px;
   --ease:      cubic-bezier(0.4,0,0.2,1);
   --t:         0.3s;
-  --ff-display: 'Syne', sans-serif;
+  --ff-display: 'Lora', Georgia, serif;
   --ff-serif:   'Lora', serif;
   --ff-mono:    'JetBrains Mono', monospace;
 }
@@ -463,42 +463,9 @@ footer { background: #050505; border-top: 1px solid var(--border2); padding: 6re
 .nature-contributions { margin-top: 0; }
 
 /* ── NO MATTER WHAT COVER ── */
-.proj-card--reverse { flex-direction: row-reverse; }
-.nmw-cover {
-  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.6rem;
-  padding: 3rem 2rem 2rem;
-  background:
-    radial-gradient(ellipse at 25% 15%, rgba(212,147,58,0.20), transparent 60%),
-    radial-gradient(ellipse at 85% 95%, rgba(140,47,47,0.28), transparent 55%), #0b0a09;
-}
-.nmw-issue { font-family: var(--ff-mono); font-size: 0.62rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--amber); }
-.nmw-title {
-  font-family: var(--ff-display); font-weight: 800; text-transform: uppercase; text-align: center;
-  font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 0.95; color: var(--white); letter-spacing: 0.02em;
-}
-.nmw-title span { color: var(--amber); }
-.nmw-meter { width: min(320px, 80%); }
-.nmw-meter-labels {
-  display: flex; justify-content: space-between; font-family: var(--ff-mono);
-  font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
-}
-.nmw-meter-bar {
-  position: relative; height: 4px; margin-top: 0.6rem; border-radius: 999px;
-  background: linear-gradient(90deg, var(--amber), #6e6a62 50%, #8c2f2f);
-}
-.nmw-meter-bar::after {
-  content: ''; position: absolute; top: 50%; left: 50%; width: 12px; height: 12px; border-radius: 50%;
-  background: var(--white); transform: translate(-50%, -50%); box-shadow: 0 0 0 4px rgba(240,236,228,0.12);
-  animation: nmwSwing 6s ease-in-out infinite;
-}
-@keyframes nmwSwing { 0%,100% { left: 50%; } 25% { left: 22%; } 75% { left: 78%; } }
-@media (prefers-reduced-motion: reduce) { .nmw-meter-bar::after { animation: none; } }
-@media (max-width: 1100px) {
-  .proj-card--reverse { flex-direction: column; }
-  .proj-card--reverse .pc-media { width: 100%; aspect-ratio: auto; min-height: 340px; }
-  .nmw-cover { padding-top: 4.5rem; }
-}
-.contrib-label + .nature-contributions { border-top: none; padding-top: 0; }
-@media (max-width: 600px) {
-  .proj-card--reverse .wip-badge { top: auto; bottom: 0.75rem; right: 0.75rem; }
-}
+/* No Matter What: screenshot card */
+.proj-card--nmw { flex-direction: column; }
+.proj-card--nmw .pc-media { width: 100%; aspect-ratio: 16/9; min-height: 0; }
+.proj-card--nmw .pc-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.proj-card--nmw .pc-tags-media { top: auto; bottom: 0.75rem; left: 0.75rem; }
+.proj-card--nmw .wip-badge { top: auto; bottom: 0.75rem; right: 0.75rem; }
