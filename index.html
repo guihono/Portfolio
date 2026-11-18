@@ -3,402 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guilherme Honorato — Game Designer & Narrative Programmer</title>
+  <title>Guilherme Honorato | Narrative Designer and Writer</title>
+  <meta name="description" content="Portfolio of Guilherme Honorato, a game writer and narrative designer studying at RIT.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-<style id="nmw-card">
-/* No Matter What: screenshot card */
-.proj-card--nmw { flex-direction: column; }
-.proj-card--nmw .pc-media { width: 100%; aspect-ratio: 16/9; min-height: 0; }
-.proj-card--nmw .pc-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.proj-card--nmw .pc-tags-media { top: auto; bottom: 0.75rem; left: 0.75rem; }
-.proj-card--nmw .wip-badge { top: auto; bottom: 0.75rem; right: 0.75rem; }
-.proj-card--nmw .pc-media::after { content:""; position:absolute; inset:auto 0 0 0; height:35%; background:linear-gradient(to top, rgba(8,8,8,.85), transparent); pointer-events:none; }
-.proj-card--nmw .pc-tags-media, .proj-card--nmw .wip-badge { z-index: 2; }
-@media (max-width:600px){
-  .proj-card--nmw .wip-badge { top:.6rem; bottom:auto; right:.6rem; }
-  .proj-card--nmw .pc-tags-media { bottom:.6rem; left:.6rem; right:.6rem; }
-}
-
-</style>
 </head>
 <body>
-
-  <!-- GRAIN OVERLAY -->
   <canvas id="grain"></canvas>
-
-  <!-- ═══ NAV ═══ -->
   <nav id="nav">
-    <a href="#hero" class="nav-brand">GH<span class="brand-dot">.</span></a>
-    <button id="nav-toggle" aria-label="menu">
-      <span></span><span></span>
-    </button>
+    <a href="##hero" class="nav-brand">GH<span class="brand-dot">.</span></a>
+    <button id="nav-toggle" aria-label="menu"><span></span><span></span></button>
     <ul id="nav-links">
-      <li><a href="#about" data-num="00">About</a></li>
-      <li><a href="#professional" data-num="01">Professional</a></li>
-      <li><a href="#team" data-num="02">Team</a></li>
-      <li><a href="#personal" data-num="03">Personal</a></li>
+      <li><a href="#work" data-num="00">Work</a></li>
+      <li><a href="#about" data-num="01">About</a></li>
+      <li><a href="Honorato_Guilherme_Resume_GameDeveloper.pdf" target="_blank" data-num="02">Resume</a></li>
       <li><a href="#contact" class="nav-cta">Contact →</a></li>
     </ul>
   </nav>
 
-  <!-- ═══ HERO ═══ -->
   <section id="hero">
-    <div class="hero-bg">
-      <div class="hero-lines"></div>
-    </div>
+    <div class="hero-bg"><div class="hero-lines"></div></div>
     <div class="hero-inner">
-      <p class="hero-eyebrow reveal">Game Designer · Narrative Programmer · Storywriter</p>
+      <p class="hero-eyebrow reveal">Narrative Designer · Writer</p>
       <h1 class="hero-title">
         <span class="ht-row reveal r1">Guilherme</span>
         <span class="ht-row reveal r2"><em>Honorato</em></span>
       </h1>
-      <p class="hero-lead reveal">Crafting worlds, systems, and stories that players feel long after the screen goes dark.</p>
+      <p class="hero-lead reveal">I write stories for games, and I build them too. I'm looking for an entry-level job in narrative design or game development.</p>
       <div class="hero-actions reveal">
-        <a href="#professional" class="btn-solid">See my work</a>
+        <a href="#work" class="btn-solid">See my work</a>
         <a href="Honorato_Guilherme_Resume_GameDeveloper.pdf" target="_blank" class="btn-outline">Resume ↗</a>
       </div>
+      <p class="hero-note reveal">I made this website myself. It's not a template.</p>
     </div>
-    <div class="hero-scroll">
-      <span>scroll</span>
-      <div class="scroll-bar"></div>
-    </div>
+    <div class="hero-scroll"><span>scroll</span><div class="scroll-bar"></div></div>
   </section>
 
-  <!-- ═══ ABOUT ═══ -->
-  <section id="about">
+  <section id="work">
     <div class="section-wrapper">
-      <div class="section-tag">00 — About</div>
-      <div class="about-top">
-        <h2 class="section-heading reveal-up">I build games that <span class="heading-amber">tell stories</span> worth playing.</h2>
-        <div class="about-bio reveal-up">
-          <p>Hi — I'm Guilherme, a storywriter, game programmer, and game designer from Brazil. I've been writing stories and playing games since childhood; two years ago I started <em>building</em> them.</p>
-          <p>I'm pursuing my Bachelor's in Game Design and Development at Rochester Institute of Technology (expected 2027), working across Unreal Engine blueprints, Unity C#, GameMaker, and full narrative systems design.</p>
-          <p>Beyond code and engines, I care deeply about the stories games tell — and I'm always pushing to make them unforgettable. I take on challenges not just to learn, but to grow into the developer those games deserve.</p>
-          <p class="about-note">I also build websites. You're on one. ;)</p>
-        </div>
-      </div>
-      <div class="skills-grid reveal-up">
-        <div class="skill-item"><span class="sk-icon">◈</span>Unreal Engine</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Blueprints</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Unity</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>C# / Visual Studio</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>GameMaker</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Twine / SugarCube</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Game Design</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Combat Design</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Level Design</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Systems Design</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Game Balancing</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Rapid Prototyping</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Narrative Design</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Scriptwriting</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Voice Direction</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Playtesting</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Pixel Art</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Animation</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>UI / UX Design</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>VFX</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Git &amp; GitHub</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Perforce</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Team Leadership</div>
-        <div class="skill-item"><span class="sk-icon">◈</span>Game Jams</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ PROFESSIONAL ═══ -->
-  <section id="professional">
-    <div class="section-wrapper">
-      <div class="section-tag">01 — Professional Work</div>
-      <h2 class="section-heading reveal-up">Professional</h2>
-
-      <div class="featured-card reveal-up">
-        <div class="fc-media">
-          <div class="yt-wrap">
-            <iframe src="https://www.youtube.com/embed/B01VZdgthws" title="Changeling VR Trailer"
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-        <div class="fc-body">
-          <div class="fc-tags">
-            <span>VR</span><span>Unreal Engine</span><span>Narrative</span>
-          </div>
+      <div class="section-tag">00 — Work</div>
+      <h2 class="section-heading reveal-up">My <span class="heading-amber">projects</span></h2>
+      <div class="work-grid">
+      <a class="work-tile reveal-up" href="changeling.html">
+        <div class="wt-img"><img src="https://i.ytimg.com/vi/B01VZdgthws/maxresdefault.jpg" alt="Changeling VR" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace('maxresdefault','hqdefault')"></div>
+        <div class="wt-body">
           <h3>Changeling VR</h3>
-          <p class="role-line">My role · Narrative Writer · Voice Director · Blueprint Implementer</p>
-          <p class="premise">A narrative mystery VR game in Unreal Engine about a detective who can dream-walk through other people's memories.</p>
-          <p class="contrib-label">What I did</p>
-          <ul class="contrib-list">
-            <li><strong>Wrote and revised scripts and voice lines</strong> across multiple levels of the game.</li>
-            <li><strong>Took full ownership of Aurelia's Loss</strong>, one of the game's levels.</li>
-            <li><strong>Directed voice recording sessions</strong> to get authentic, believable delivery.</li>
-            <li><strong>Implemented voice lines in-engine</strong> using Unreal Engine's Blueprint system.</li>
-            <li><strong>Scripted character positioning and movement</strong> within levels with Blueprints.</li>
-            <li><strong>Contributed to level design and story-driven programming</strong> so the narrative stayed consistent from level to level.</li>
-          </ul>
-          <a href="https://changelingvr.vercel.app/" target="_blank" class="btn-solid">Visit website ↗</a>
+          <p class="wt-role">Writer · Voice director</p>
+          <p class="wt-line">A VR mystery game in Unreal Engine. I wrote the scripts, directed the voices and put them in the game.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile reveal-up" href="ilusao.html">
+        <div class="wt-img"><img src="ilusao-title.jpg" alt="Ilusão title screen" loading="lazy"></div>
+        <div class="wt-body">
+          <h3>Ilusão</h3>
+          <p class="wt-role">Writer · Developer</p>
+          <p class="wt-line">A psychological horror game. I wrote it, built it and ran the playtests. It is out on itch.io.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile reveal-up" href="nature-of-the-unknown.html">
+        <div class="wt-img"><img src="nature-wasp.jpg" alt="Nature of the Unknown gameplay" loading="lazy"><div class="wt-badge">In progress</div></div>
+        <div class="wt-body">
+          <h3>Nature of the Unknown</h3>
+          <p class="wt-role">Solo developer</p>
+          <p class="wt-line">A 2D action platformer I am making alone in Unity. I do the code, the design and the art.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile reveal-up" href="no-matter-what.html">
+        <div class="wt-img"><img src="NoMatterWhat.png" alt="No Matter What" loading="lazy"><div class="wt-badge">In progress</div></div>
+        <div class="wt-body">
+          <h3>No Matter What</h3>
+          <p class="wt-role">Writer · Narrative designer</p>
+          <p class="wt-line">A superhero story in Twine where your choices decide who you become.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile work-tile--wide reveal-up" href="the-truth-behind.html">
+        <div class="wt-img"><div class="wt-img--text" style="position:absolute;inset:0"><span>The Truth Behind</span><em>Game design and story</em></div></div>
+        <div class="wt-body">
+          <h3>The Truth Behind</h3>
+          <p class="wt-role">Writer · Researcher · Game designer</p>
+          <p class="wt-line">A 27-page game design and story document: 13 bosses, 10 battles across history and a full story. I researched and wrote all of it.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile reveal-up" href="a-final-cut.html">
+        <div class="wt-img"><div class="wt-img--text" style="position:absolute;inset:0"><span>A Final Cut</span><em>Game design and story</em></div></div>
+        <div class="wt-body">
+          <h3>A Final Cut</h3>
+          <p class="wt-role">Writer · Game designer</p>
+          <p class="wt-line">A samurai game set during a zombie outbreak in 1851 Japan. I wrote the story and designed how it plays. You can read it.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile reveal-up" href="pumpkin-slasher.html">
+        <div class="wt-img"><img src="https://i.ytimg.com/vi/tjA5fHfdUwA/maxresdefault.jpg" alt="Pumpkin Slasher Bloodbath" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace('maxresdefault','hqdefault')"></div>
+        <div class="wt-body">
+          <h3>Pumpkin Slasher Bloodbath</h3>
+          <p class="wt-role">Narrative · Levels · Art</p>
+          <p class="wt-line">A horror game made for a game jam by a team of 3. We won the Creativity Award.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile reveal-up" href="sk8-escape.html">
+        <div class="wt-img"><img src="https://i.ytimg.com/vi/NzDVs-71ye8/maxresdefault.jpg" alt="Sk8 Escape" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace('maxresdefault','hqdefault')"></div>
+        <div class="wt-body">
+          <h3>Sk8 Escape</h3>
+          <p class="wt-role">Gameplay programmer · UI</p>
+          <p class="wt-line">An endless runner in C#, made with a team of 5.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      <a class="work-tile reveal-up" href="wack-west.html">
+        <div class="wt-img"><img src="WackWestBoard.png" alt="Wack West board" loading="lazy"></div>
+        <div class="wt-body">
+          <h3>Wack West</h3>
+          <p class="wt-role">Game designer · Playtest lead</p>
+          <p class="wt-line">A Wild West board game about bluffing. I worked on every stage of it.</p>
+          <span class="wt-more">See the project →</span>
+        </div>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-simple">
+    <div class="section-wrapper">
+      <div class="section-tag">01 — About</div>
+      <div class="about-top">
+        <h2 class="section-heading reveal-up">I write stories, and I build the games they live in.</h2>
+        <div class="about-bio reveal-up">
+          <p>Hi, I'm Guilherme. I'm from Brazil and I'm studying Game Design and Development at RIT. I graduate in 2027.</p>
+          <p>I've loved writing stories and playing games since I was a kid. Two years ago I started making games too. Now I can write the story and also put it in the engine myself.</p>
+          <p>I'm looking for an entry-level job in narrative design or game development.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ═══ TEAM PROJECTS ═══ -->
-  <section id="team">
-    <div class="section-wrapper">
-      <div class="section-tag">02 — Team Projects</div>
-      <h2 class="section-heading reveal-up">Team Work</h2>
-
-      <div class="cards-grid">
-
-        <!-- Pumpkin Slasher -->
-        <article class="proj-card reveal-up" style="--delay:0ms">
-          <div class="pc-media">
-            <div class="yt-wrap">
-              <iframe src="https://www.youtube.com/embed/tjA5fHfdUwA" title="Pumpkin Slasher Bloodbath"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-            </div>
-            <div class="pc-tags-media"><span>GameMaker</span><span>Game Jam</span><span>Horror</span></div>
-            <div class="award-badge">🏆 Creativity Award</div>
-          </div>
-          <div class="pc-body">
-            <h3>Pumpkin Slasher Bloodbath</h3>
-            <p class="role-line">My role · Narrative Designer · Level Designer · Environment Artist</p>
-            <p class="premise">A retro hack-and-slash horror game made in GameMaker by a 3-person team for a "Nostalgia"-themed game jam.</p>
-            <p class="contrib-label">What I did</p>
-            <ul class="contrib-list">
-              <li><strong>Created the narrative</strong> behind the game and its framing: a kid playing a horror game who has to fix glitches before the monster reaches the real world.</li>
-              <li><strong>Helped shape the whole concept</strong> from the first ideas, not just my own department.</li>
-              <li><strong>Designed levels and built the maps</strong> the player moves through.</li>
-              <li><strong>Drew the environment sprites</strong>: houses, lakes, and pumpkin patches.</li>
-            </ul>
-            <p class="pc-role"><span>Result:</span> Our team won the game jam's Creativity Award.</p>
-            <a href="https://granola.gg/app/project/44f5cc1e/project_invite" target="_blank" class="btn-outline-sm">View build ↗</a>
-          </div>
-        </article>
-
-        <!-- Sk8 Escape -->
-        <article class="proj-card reveal-up" style="--delay:80ms">
-          <div class="pc-media">
-            <div class="yt-wrap">
-              <iframe src="https://www.youtube.com/embed/NzDVs-71ye8" title="Sk8 Escape"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-            </div>
-            <div class="pc-tags-media"><span>C#</span><span>Visual Studio</span><span>Mobile</span></div>
-          </div>
-          <div class="pc-body">
-            <h3>Sk8 Escape</h3>
-            <p class="role-line">My role · Gameplay Programmer · UI Designer</p>
-            <p class="premise">An endless runner built in C# (Visual Studio 2022) by a 5-person class team, where a skater escapes the cops by managing speed.</p>
-            <p class="contrib-label">What I did</p>
-            <ul class="contrib-list">
-              <li><strong>Implemented character movement</strong>, the core of how the game feels to play.</li>
-              <li><strong>Designed the Start, Pause, and Game Over screens</strong> that frame every run.</li>
-              <li><strong>Created the afterimage effect</strong> that shows the player's speed visually.</li>
-              <li><strong>Worked inside a 5-person team</strong>, building my systems to fit what the others made.</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Wack West -->
-        <article class="proj-card proj-card--wide reveal-up" style="--delay:160ms">
-          <div class="pc-media pc-media--img">
-            <img src="./WackWestBoard.png" alt="Wack West board game layout">
-            <div class="pc-tags-media">
-              <span>Board Game</span>
-              <span>Social Deduction</span>
-              <span>Wild West</span>
-            </div>
-          </div>
-          <div class="pc-body">
-            <h3>Wack West</h3>
-            <p class="role-line">My role · Game Designer · Playtest Lead</p>
-            <p class="premise">A team-designed social deduction board game set in the Wild West, where players use or bluff their character abilities.</p>
-            <p class="contrib-label">What I did</p>
-            <ul class="contrib-list">
-              <li><strong>Contributed at every stage of development</strong>, from the first concept discussions to the finished game.</li>
-              <li><strong>Designed characters and their abilities</strong>, the tools players use or bluff with.</li>
-              <li><strong>Wrote the rules</strong> that govern play.</li>
-              <li><strong>Shaped the visual style</strong> of the game.</li>
-              <li><strong>Organized playtests and gathered player feedback</strong>, then made balance adjustments to refine gameplay.</li>
-            </ul>
-          </div>
-        </article>
-
+      <div class="skill-groups reveal-up">
+        <div class="skill-group"><h3>Writing</h3><p>Narrative design, scriptwriting, voice direction, branching stories in Twine</p></div>
+        <div class="skill-group"><h3>Design</h3><p>Level design, systems design, playtesting, balancing</p></div>
+        <div class="skill-group"><h3>Engines and tools</h3><p>Unreal Engine (Blueprints), Unity (C#), GameMaker, Git, Perforce</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ PERSONAL PROJECTS ═══ -->
-  <section id="personal">
-    <div class="section-wrapper">
-      <div class="section-tag">03 — Personal Projects</div>
-      <h2 class="section-heading reveal-up">Personal Work</h2>
-
-      <!-- Nature of the Unknown -->
-      <div class="personal-featured reveal-up">
-        <article class="proj-card proj-card--personal-hero">
-          <div class="pc-media">
-            <div class="yt-wrap">
-              <iframe src="https://www.youtube.com/embed/oddXxxu_DoI" title="Nature of the Unknown Alpha"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-            </div>
-            <div class="pc-tags-media">
-              <span>Unity</span><span>C#</span><span>2D Platformer</span><span>Pixel Art</span><span>Solo</span>
-            </div>
-            <div class="wip-badge">Work in Progress</div>
-          </div>
-          <div class="pc-body">
-            <h3>Nature of the Unknown</h3>
-            <p class="role-line">My role · Solo Developer · Programmer · Designer · Pixel Artist</p>
-            <p class="premise">A 2D action-platformer in Unity set in a dark Amazon rainforest, where a grasshopper fights insects and bosses with a timing-based dodge-parry.</p>
-            <p class="contrib-label">What I did — everything, as a solo developer</p>
-            <div class="nature-contributions">
-              <div class="nc-col">
-                <p class="nc-label">Programming</p>
-                <ul>
-                  <li>Player movement, jumping, and double jump</li>
-                  <li>Melee combat system</li>
-                  <li>Dash / dodge-parry with counterattacks</li>
-                  <li>Projectile reflection</li>
-                  <li>Health, damage, and game states</li>
-                  <li>Enemy behaviors for each enemy type</li>
-                  <li>A multi-phase spider boss</li>
-                </ul>
-              </div>
-              <div class="nc-col">
-                <p class="nc-label">Design, Art & Production</p>
-                <ul>
-                  <li>Designed the game around the dodge-parry mechanic</li>
-                  <li>Encounter design and enemy placement</li>
-                  <li>Tutorials, progression, and difficulty balancing</li>
-                  <li>All pixel art and animation, drawn from scratch</li>
-                  <li>UI and VFX</li>
-                  <li>Playtesting, debugging, and overall production</li>
-                </ul>
-              </div>
-            </div>
-            <p class="pc-role"><span>Next:</span> I'm writing the game's narrative script alongside development.</p>
-          </div>
-        </article>
-      </div>
-
-      <!-- No Matter What -->
-      <div class="personal-featured reveal-up">
-        <article class="proj-card proj-card--personal-hero proj-card--nmw">
-          <div class="pc-media">
-            <img src="./NoMatterWhat.png" alt="No Matter What — Issue 1, the first choice screen" loading="lazy">
-          <div class="pc-tags-media">
-              <span>Twine</span><span>SugarCube</span><span>Branching Narrative</span>
-            </div>
-            <div class="wip-badge">Work in Progress</div>
-          </div>
-          <div class="pc-body">
-            <h3>No Matter What</h3>
-            <p class="role-line">My role · Writer · Narrative Designer · Twine Developer</p>
-            <p class="premise">A branching superhero story inspired by Invincible and superhero comics, where your choices decide whether you become a hero, a vigilante, or a villain.</p>
-            <p class="contrib-label">What I did</p>
-            <div class="nature-contributions">
-              <div class="nc-col">
-                <p class="nc-label">Story & Systems Design</p>
-                <ul>
-                  <li>Created the original characters and the story</li>
-                  <li>Designed the Choice Continuum, a protector-vs-punisher meter that drives status, reputation, and endings</li>
-                  <li>Planned a five-issue branching arc where every choice has a cost</li>
-                  <li>Weighted choices so big decisions leave marks that never go away</li>
-                  <li>Revised the story from professor feedback</li>
-                </ul>
-              </div>
-              <div class="nc-col">
-                <p class="nc-label">Writing & Implementation</p>
-                <ul>
-                  <li>Prototyped scenes as screenplays in Trelby before adapting them to interactive prose</li>
-                  <li>Built it in Twine with SugarCube</li>
-                  <li>Page theme and status chip react to how society sees the player</li>
-                  <li>"X will remember that" callbacks for major choices</li>
-                  <li>Comic-style "Issues" and choices laid out around the text</li>
-                </ul>
-              </div>
-            </div>
-            <p class="pc-role"><span>Status:</span> In development — aiming for a more complete build by the end of the year.</p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Script cards row -->
-      <div class="personal-grid">
-
-        <!-- A Final Cut -->
-        <article class="script-card reveal-up" style="--delay:0ms">
-          <div class="sc-number">03</div>
-          <div class="sc-tags"><span>Hack & Slash</span><span>Feudal Japan</span><span>Unreal Engine</span></div>
-          <h3>A Final Cut</h3>
-          <p class="role-line">My role · Writer · Game Designer</p>
-          <p class="premise">A third-person samurai hack-and-slash set during a zombie outbreak in 1851 Feudal Japan.</p>
-          <p class="contrib-label">What I did</p>
-          <ul class="contrib-list">
-            <li><strong>Wrote the full game script</strong>, including the story of the samurai Hao and his search for his loved one.</li>
-            <li><strong>Designed the game's mechanics</strong> and fleshed them out on paper.</li>
-            <li><strong>Now building it in Unreal Engine</strong> to bring the script to life.</li>
-          </ul>
-          <p class="sc-status">Script complete · In production (Unreal Engine)</p>
-          <a href="Portfolio - A Final Cut.pdf" target="_blank" class="btn-outline-sm">Read script ↗</a>
-        </article>
-
-        <!-- The Truth Behind -->
-        <article class="script-card reveal-up" style="--delay:80ms">
-          <div class="sc-number">04</div>
-          <div class="sc-tags"><span>Action RPG</span><span>Dark Fantasy</span><span>Unreal Engine</span></div>
-          <h3>The Truth Behind</h3>
-          <p class="role-line">My role · Writer · Game Designer</p>
-          <p class="premise">A complex action RPG where a demon hunting archangels uncovers a terrible truth about her own past.</p>
-          <p class="contrib-label">What I did</p>
-          <ul class="contrib-list">
-            <li><strong>Wrote a complete script and story</strong> for the whole game, including the twist that drives its protagonist, Glasya.</li>
-            <li><strong>Started production in Unreal Engine</strong>, learning the engine by building the game.</li>
-          </ul>
-          <p class="sc-status">Full script complete · Early production (Unreal Engine)</p>
-          <a href="Portfolio - The Truth Behind.pdf" target="_blank" class="btn-outline-sm">Read script ↗</a>
-        </article>
-
-        <!-- Ilusão -->
-        <article class="proj-card proj-card--ilusao reveal-up" style="--delay:160ms">
-          <div class="pc-media">
-            <div class="yt-wrap">
-              <iframe src="https://www.youtube.com/embed/Cu6AQsZk3BQ" title="Ilusão Trailer"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-            </div>
-            <div class="pc-tags-media"><span>Psychological Horror</span><span>Released</span></div>
-          </div>
-          <div class="pc-body">
-            <h3>Ilusão</h3>
-            <p class="role-line">My role · Writer · Sole Developer · Playtest Lead</p>
-            <p class="premise">A psychological horror game, released on itch.io.</p>
-            <p class="contrib-label">What I did</p>
-            <ul class="contrib-list">
-              <li><strong>Wrote the game</strong> — responsible for all of its writing.</li>
-              <li><strong>Handled the full development</strong> of the game, from start to release.</li>
-              <li><strong>Ran playtests</strong> and used the feedback to make the game better.</li>
-              <li><strong>Released it</strong> on itch.io and built its official website.</li>
-            </ul>
-            <div class="ilusao-links">
-              <a href="https://guihono.github.io/ilusao-game/" target="_blank" class="btn-solid">Official Website ↗</a>
-              <a href="https://guihonorato.itch.io/ilusao" target="_blank" class="btn-outline-sm">Play on itch.io ↗</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ CONTACT / FOOTER ═══ -->
   <footer id="contact">
     <div class="footer-inner">
       <div class="footer-icons-row reveal-up">
@@ -427,11 +178,10 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 Guilherme Honorato</span>
-        <span>Game Design & Development · Rochester Institute of Technology</span>
+        <span>Game Design &amp; Development · RIT</span>
       </div>
     </div>
   </footer>
-
   <script>
   /* ── GRAIN ── */
   (function(){
@@ -486,11 +236,22 @@
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(s => { if(window.scrollY >= s.offsetTop - 140) current = s.id; });
-    navAs.forEach(a => {
-      a.classList.remove('active');
-      if(a.getAttribute('href') === '#'+current) a.classList.add('active');
-    });
+    navAs.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#'+current); });
   }, { passive: true });
+  
+  /* ── LIGHTBOX ── */
+  (function(){
+    const imgs = document.querySelectorAll('.pp-fig img, .pp-media--img img');
+    if(!imgs.length) return;
+    const lb = document.createElement('div'); lb.id = 'lb';
+    lb.innerHTML = '<button aria-label="Close">×</button><img alt="">';
+    document.body.appendChild(lb);
+    const big = lb.querySelector('img');
+    const close = () => lb.classList.remove('open');
+    imgs.forEach(i => i.addEventListener('click', () => { big.src = i.src; big.alt = i.alt; lb.classList.add('open'); }));
+    lb.addEventListener('click', close);
+    document.addEventListener('keydown', e => { if(e.key === 'Escape') close(); });
+  })();
   </script>
 </body>
 </html>
