@@ -540,6 +540,7 @@ footer { background: #050505; border-top: 1px solid var(--border2); padding: 6re
 
 .pp-text { font-size: .92rem; line-height: 2; color: var(--mid); margin-bottom: 2.2rem; max-width: 46rem; }
 .pp-text p + p { margin-top: 1rem; }
+.pp-text h2 { margin-bottom: 1rem; }
 .pp-text strong { color: var(--white); font-weight: 500; }
 .pp-fig { margin: 0; }
 .pp-fig img { width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--border2); }
